@@ -1,14 +1,18 @@
-function getComputerChoice() {
+function getComputerChoice(RPS) {
     // Returns a random integer from 0 to 2:
-    switch(Math.floor(Math.random() * 2)) {
+    let greeting = Math.floor(Math.random() * 2);
+    //Randomly parse Rock, Paper or Scissors
+    switch(greeting) {
         case 1:
-            text = "Rock";
+            RPS = "Rock";
             break;
         case 2:
-            text = "Paper";
+            RPS = "Paper";
             break;
         default:
-            text = "Scissors";
+            RPS = "Scissors";
     }
-    console.log(text);
+    console.log(RPS);
 }
+
+getComputerChoice();
