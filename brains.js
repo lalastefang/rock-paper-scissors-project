@@ -1,6 +1,6 @@
 function getComputerChoice(RPS) {
-    // Returns a random integer from 0 to 2:
-    let greeting = Math.floor(Math.random() * 2);
+    // Returns a random integer from 1 to 3:
+    let greeting = Math.floor(Math.random() * 3);
     //Randomly parse Rock, Paper or Scissors
     switch(greeting) {
         case 1:
